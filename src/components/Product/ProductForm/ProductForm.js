@@ -10,7 +10,7 @@ import OptionColor from '../OptionColor/OptionColor';
      event.preventDefault();
      console.log(
        "Produkt: " + props.title,
-       "Price: " + props.getPrice(),
+       "Price: " + props.price,
        "Selected size: " + props.currentSize,
        "Selected color: " + props.currentColor
      );
@@ -43,7 +43,7 @@ import OptionColor from '../OptionColor/OptionColor';
    colors: PropTypes.array.isRequired,
    currentColor: PropTypes.string.isRequired,
    setCurrentColor: PropTypes.func.isRequired,
-   getPrice: PropTypes.func.isRequired,
+   price: PropTypes.number.isRequired,
    prepareColorClassName: PropTypes.func.isRequired,
    title: PropTypes.string.isRequired,
  };
